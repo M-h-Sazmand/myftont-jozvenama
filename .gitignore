@@ -1,0 +1,15 @@
+# Mac OS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Env files (اگر داشته باشی)
+.env
+
+# VS Code settings
+.vscode/
