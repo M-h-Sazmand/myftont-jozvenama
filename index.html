@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>وب‌سایت جزوه‌نما</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn :wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css " />
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+  <nav class="nav">
+    <a href="index.html" class="nav_logo">جزوه نما</a>
+
+    <!--search-->
+    <div class="search_bar">
+      <input type="text" placeholder="جستجو..." />
+      <i class="uil uil-search search_icon"></i>
+    </div>
+
+    <ul class="nav_items">
+      <li class="nav_item"><a href="about we.html" class="nav_link">درباره ما</a></li>
+      <li class="nav_item">
+        <div class="dropdown">
+          <a href="#" class="nav_link dropdown_toggle">رشته ها </a>
+          <ul class="dropdown_menu">
+            <!-- Engineering -->
+            <li class="dropdown_item">
+              <div class="nested_dropdown">
+                <a href="#" class="dropdown_link">مهندسی</a>
+                <ul class="nested_dropdown_menu">
+                  <li><a href="computer_engineering.html" class="nested_dropdown_item">مهندسی کامپیوتر</a></li>
+                  <li><a href="#"  id="gardening_link" class="nested_dropdown_item">مهندسی عمران</a></li>
+                </ul>
+              </div>
+            </li>
+            <!--  Sciences -->
+            <li class="dropdown_item">
+              <div class="nested_dropdown">
+                <a href="#" class="dropdown_link">علوم پایه</a>
+                <ul class="nested_dropdown_menu">
+                  <li><a href="biology1.html" class="nested_dropdown_item">زیست‌شناسی</a></li>
+                  <li><a href="physicss-1.html" class="nested_dropdown_item">فیزیک</a></li>
+                </ul>
+              </div>
+            </li>
+            <!--  keshavarzi -->
+            <li class="dropdown_item">
+              <div class="nested_dropdown">
+                <a href="#" class="dropdown_link">کشاورزی</a>
+                <ul class="nested_dropdown_menu">
+                  <li><a href="#"id="gardening_link" class="nested_dropdown_item">ژنتیک</a></li>
+                  <li><a href="#" class="nested_dropdown_item">باغبانی</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav_item"><a href="index.html" class="nav_link">خانه</a></li>
+    </ul>
+
+    <!-- Login Butto -->
+    <button class="button" id="form-open">ورود</button>
+  </nav>
+</header>
+  <!-- Home -->
+  <section class="home">
+    <div class="welcome_message animated">
+      <h1 class="typewriter">به جزوه‌نما خوش آمدید</h1>
+      <p>
+         .اینجا جایی است که می‌توانید به راحتی جزوات درسی خود را به اشتراک بگذارید و از منابع دیگران بهره‌مند شوید. ما به دنبال ایجاد یک جامعه آموزشی هستیم که در آن دانشجویان بتوانند به راحتی به اطلاعات و منابع مورد نیاز خود دسترسی پیدا کنند
+      </p>
+    </div>
+    <!-- Carousel (pic)-->
+  <section class="carousel_section">
+    <h2 class="carousel_title">رشته های پر بازدید</h2>
+    <div class="carousel_container">
+      <div class="carousel_slides">
+        <a href="computer_engineering.html" class="carousel_item">
+          <img src="pic/comppng.png" alt="مهندسی کامپیوتر" />
+          <div class="carousel_caption">مهندسی کامپیوتر</div>
+        </a>
+        <a href="" class="carousel_item">
+          <img src="pic/physics.jpg" alt="فیزیک" />
+          <div class="carousel_caption">فیزیک</div>
+        </a>
+        
+        <a href="biology.html" class="carousel_item">
+          <img src="pic/biology.png" alt="زیست‌شناسی" />
+          <div class="carousel_caption">زیست‌شناسی</div>
+        </a>
+      </div>
+      <button class="carousel_button prev" id="prevButton">&#10094;</button>
+      <button class="carousel_button next" id="nextButton">&#10095;</button>
+    </div>
+  
+    <div class="form_container">
+      <i class="uil uil-times form_close"></i>
+
+      <!-- بگو چی هستی -->
+      <div class="role_selection">
+        <h2>نقش خود را انتخاب کنید</h2>
+        <button class="button role_button" id="user_role">کاربر</button>
+        <button class="button role_button" id="admin_role">ادمین</button>
+      </div>
+
+      <!-- ورود کاربر -->
+      <div class="form login_form user_form" id="user_login_form" style="display: none;">
+        <form action="#">
+          <h2>ورود کاربر</h2>
+          <div class="input_box">
+            <input type="text" placeholder="نام کاربری خود را وارد کنید" required />
+            <i class="uil uil-user username"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="رمز عبور خود را وارد کنید" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <button class="button">ورود</button>
+          <div class="login_signup">حساب کاربری ندارید؟ <a href="#" id="user_signup_link">ثبت‌نام</a></div>
+        </form>
+      </div>
+
+      <!-- ورود ادمین -->
+      <div class="form login_form admin_form" id="admin_login_form" style="display: none;">
+        <form action="#">
+          <h2>ورود ادمین</h2>
+          <div class="input_box">
+            <input type="text" placeholder="نام کاربری ادمین را وارد کنید" required />
+            <i class="uil uil-user username"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="رمز عبور ادمین را وارد کنید" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <button class="button">ورود</button>
+        </form>
+      </div>
+
+      <!-- ثبت کاربر -->
+      <div class="form signup_form user_form" id="user_signup_form" style="display: none;">
+        <form action="#">
+          <h2>ثبت‌نام کاربر</h2>
+          <div class="input_box">
+            <input type="email" placeholder="ایمیل خود را وارد کنید" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="text" placeholder="نام کاربری ایجاد کنید" required />
+            <i class="uil uil-user username"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="رمز عبور ایجاد کنید" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="رمز عبور را تأیید کنید" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <button class="button">ثبت‌نام</button>
+          <div class="login_signup">حساب کاربری دارید؟ <a href="#" id="user_login_link">ورود</a></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

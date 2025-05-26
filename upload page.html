@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>اپلود جزوه - جزوه نما</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn :wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css " />
+
+  <link rel="stylesheet" href="upload css.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav_logo">جزوه نما</a>
+      <ul class="nav_items">
+        <li class="nav_item"><a href="index.html" class="nav_link">خانه</a></li>
+      
+    </nav>
+  </header>
+<section class="upload_form_section">
+    <div class="upload_form_container">
+      <h1>اپلود جزوه</h1>
+      <p>لطفاً اطلاعات مربوط به جزوه خود را وارد کنید و فایل جزوه را انتخاب کنید.</p>
+      <form id="upload_notes_form">
+      
+        <div class="input_box">
+          <label for="uploader_name">:نام اپلود کننده</label>
+          <input type="text" id="uploader_name" placeholder="نام خود را وارد کنید" required />
+        </div>
+  
+        <div class="input_box">
+          <label for="professor_name">:نام استاد</label>
+          <input type="text" id="professor_name" placeholder="نام استاد را وارد کنید" required />
+        </div>
+  
+        <div class="input_box">
+          <label for="university_name">:نام دانشگاه</label>
+          <input type="text" id="university_name" placeholder="نام دانشگاه را وارد کنید" required />
+        </div>
+  
+        <div class="input_box">
+          <label for="academic_year">:سال تحصیلی</label>
+          <input type="number" id="academic_year" placeholder="مثل 1404" required />
+        </div>
+  
+        <div class="input_box">
+          <label for="note_title">:عنوان جزوه</label>
+          <input type="text" id="note_title" placeholder="عنوان جزوه را وارد کنید" required />
+        </div>
+  
+        <div class="input_box">
+          <label for="note_file">فایل جزوه:</label>
+          <input type="file" id="note_file" accept=".pdf" required />
+        </div>
+  
+        <button type="submit" class="button">اپلود جزوه</button>
+        <script>
+            document.getElementById("upload_note_button").addEventListener("click", () => {
+              window.location.href = "upload.html"; 
+            });
+          </script>
+      </form>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>

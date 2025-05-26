@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>فیزیک - جزوه نما</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn :wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css " />
+
+  <link rel="stylesheet" href="major styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html" class="nav_logo">جزوه نما</a>
+
+      <!-- Search Bar -->
+      <div class="search_bar">
+        <input type="text" placeholder="جستجو..." />
+        <i class="uil uil-search search_icon"></i>
+      </div>
+
+      <ul class="nav_items">
+        <li class="nav_item"><a href="about we.html" class="nav_link">درباره ما</a></li>
+        <li class="nav_item">
+          <div class="dropdown">
+            <a href="#" class="nav_link dropdown_toggle">رشته ها </a>
+            <ul class="dropdown_menu">
+              <!-- Engineering -->
+              <li class="dropdown_item">
+                <div class="nested_dropdown">
+                  <a href="#" class="dropdown_link">مهندسی</a>
+                  <ul class="nested_dropdown_menu">
+                    <li><a href="computer_engineering.html" class="nested_dropdown_item">مهندسی کامپیوتر</a></li>
+                    <li><a href="#" class="nested_dropdown_item">مهندسی معدن</a></li>
+                    <li><a href="#" class="nested_dropdown_item">مهندسی عمران</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!--Sciences -->
+              <li class="dropdown_item">
+                <div class="nested_dropdown">
+                  <a href="#" class="dropdown_link">علوم پایه</a>
+                  <ul class="nested_dropdown_menu">
+                    <li><a href="biology1.html" class="nested_dropdown_item">زیست‌شناسی</a></li>
+                    <li><a href="#" class="nested_dropdown_item">فیزیک</a></li>
+                    <li><a href="#" class="nested_dropdown_item">شیمی</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- keshava -->
+              <li class="dropdown_item">
+                <div class="nested_dropdown">
+                  <a href="#" class="dropdown_link">کشاورزی</a>
+                  <ul class="nested_dropdown_menu">
+                    <li><a href="#" class="nested_dropdown_item">ژنتیک</a></li>
+                    <li><a href="#" class="nested_dropdown_item">باغبانی</a></li>
+                    <li><a href="#" class="nested_dropdown_item">دامپروری</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav_item"><a href="index.html" class="nav_link">خانه</a></li>
+        
+      </ul>
+
+      <button class="button" id="form-open">ورود</button>
+    </nav>
+  </header>
+  
+  <section class="home">
+    <div class="content_wrapper">
+      <div class="welcome_section">
+        <h1> فیزیک</h1>
+        <p>
+            فیزیک یعنی جایی که همه‌چیز از کوانتوم تا کهکشان‌ها زیر ذره‌بین میره؛<br>
+جایی که می‌فهمی چرا قهوه‌ات همیشه زود سرد میشه و چرا دنیا اینقدر پیچیده‌ست!<br>
+فیزیک یعنی تلاش برای فهمیدن قوانین عالم، حتی وقتی که جهان خودش مثل یه شوخی بزرگ به نظر میاد
+        </p>
+      </div>
+
+      <div class="notes_box">
+        <h2>جزوات</h2>
+        <div class="notes_list">
+
+          <div class="note_item animated">
+            <h3>عنوان جزوه: فیزیک -1</h3>
+            <p><strong>نام استاد:</strong> دکتر علی‌پور</p>
+            <p><strong>دانشگاه:</strong> دانشگاه صنعتی شریف</p>
+            <p><strong>سال تحصیلی:</strong> 1402</p>
+            <p class="note_details"><strong>توضیحات:</strong> فیزیک 1  بر اساس کتاب هالیدی.</p>
+            <button class="download_button">دانلود جزوه</button>
+          </div>
+  
+          <div class="note_item animated">
+            <h3>عنوان جزوه: شبکه‌های کامپیوتری</h3>
+            <p><strong>نام استاد:</strong> دکتر رضایی</p>
+            <p><strong>دانشگاه:</strong> دانشگاه تهران</p>
+            <p><strong>سال تحصیلی:</strong> 1401</p>
+            <p class="note_details"><strong>توضیحات:</strong> جزوه‌ای جامع درباره مفاهیم شبکه‌های کامپیوتری.</p>
+            <button class="download_button">دانلود جزوه</button>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+<div class="upload_cta_box">
+  <div class="upload_cta">
+    <h2>جزوه‌های خود را اشتراک بگذارید!</h2>
+    <p>به دانشجویان کمک کنید تا مسیر تحصیلی خود را با منابع باکیفیت پیش ببرند.</p>
+  </div>
+
+  <div class="upload_button_section">
+    <button id="upload_note_button" class="button">اپلود جزوه</button>
+  </div>
+</div>
+
+
+<div class="form_container">
+  <i class="uil uil-times form_close"></i>
+
+  <div class="role_selection">
+    <h2>نقش خود را انتخاب کنید</h2>
+    <button class="button role_button" id="user_role">کاربر</button>
+    <button class="button role_button" id="admin_role">ادمین</button>
+  </div>
+
+  <div class="form login_form user_form" id="user_login_form" style="display: none;">
+    <form action="#">
+      <h2>ورود کاربر</h2>
+      <div class="input_box">
+        <input type="text" placeholder="نام کاربری خود را وارد کنید" required />
+        <i class="uil uil-user username"></i>
+      </div>
+      <div class="input_box">
+        <input type="password" placeholder="رمز عبور خود را وارد کنید" required />
+        <i class="uil uil-lock password"></i>
+        <i class="uil uil-eye-slash pw_hide"></i>
+      </div>
+      <button class="button">ورود</button>
+      <div class="login_signup">حساب کاربری ندارید؟ <a href="#" id="user_signup_link">ثبت‌نام</a></div>
+    </form>
+  </div>
+
+  
+  <div class="form login_form admin_form" id="admin_login_form" style="display: none;">
+    <form action="#">
+      <h2>ورود ادمین</h2>
+      <div class="input_box">
+        <input type="text" placeholder="نام کاربری ادمین را وارد کنید" required />
+        <i class="uil uil-user username"></i>
+      </div>
+      <div class="input_box">
+        <input type="password" placeholder="رمز عبور ادمین را وارد کنید" required />
+        <i class="uil uil-lock password"></i>
+        <i class="uil uil-eye-slash pw_hide"></i>
+      </div>
+      <button class="button">ورود</button>
+    </form>
+  </div>
+
+  
+  <div class="form signup_form user_form" id="user_signup_form" style="display: none;">
+    <form action="#">
+      <h2>ثبت‌نام کاربر</h2>
+      <div class="input_box">
+        <input type="email" placeholder="ایمیل خود را وارد کنید" required />
+        <i class="uil uil-envelope-alt email"></i>
+      </div>
+      <div class="input_box">
+        <input type="text" placeholder="نام کاربری ایجاد کنید" required />
+        <i class="uil uil-user username"></i>
+      </div>
+      <div class="input_box">
+        <input type="password" placeholder="رمز عبور ایجاد کنید" required />
+        <i class="uil uil-lock password"></i>
+        <i class="uil uil-eye-slash pw_hide"></i>
+      </div>
+      <div class="input_box">
+        <input type="password" placeholder="رمز عبور را تأیید کنید" required />
+        <i class="uil uil-lock password"></i>
+        <i class="uil uil-eye-slash pw_hide"></i>
+      </div>
+      <button class="button">ثبت‌نام</button>
+      <div class="login_signup">حساب کاربری دارید؟ <a href="#" id="user_login_link">ورود</a></div>
+    </form>
+  </div>
+</div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>

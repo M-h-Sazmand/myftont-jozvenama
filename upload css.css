@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #f9f9f9;
+    background-image: url("pic/rrr.jpg");
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  .header {
+
+    background-image: url("pic/rrr.jpg");
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 6px;
+    padding: 15px 20px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav_logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .nav_items {
+    display: flex;
+    justify-content: center; 
+    color: #ccc;
+    gap: 20px;
+    flex-grow: 1;
+  }
+  
+  .nav_link {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #7d2ae8;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #5a1bba;
+    transform: scale(1.05);
+  }
+  
+  
+  .upload_form_section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .upload_form_container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #c4bdbd;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+  }
+  
+  .upload_form_container h1 {
+    font-size: 28px;
+    color: #7d2ae8;
+    margin-bottom: 15px;
+  }
+  
+  .upload_form_container p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .input_box {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  .input_box label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .input_box input,
+  .input_box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .input_box textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #7d2ae8;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #5a1bba;
+    transform: scale(1.05);
+  }
+  
+.input_box {
+    margin-bottom: 20px;
+    text-align: right;
+  }
+  
+  .input_box label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .input_box input,
+  .input_box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  .input_box textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  
+  .input_box input[type="number"] {
+    -moz-appearance: textfield; 
+  }
+  
+  .input_box input[type="number"]::-webkit-inner-spin-button,
+  .input_box input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
