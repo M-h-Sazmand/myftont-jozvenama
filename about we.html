@@ -6,65 +6,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>درباره ما - جزوه نما</title>
   
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn :wght@400;500;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css " />
-
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
   <link rel="stylesheet" href="style about we .css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- Header -->
-<header class="header">
-  <nav class="nav">
-    <a href="index.html" class="nav_logo">جزوه نما</a>
-    <ul class="nav_items">
-      <li class="nav_item"><a href="index.html" class="nav_link">خانه</a></li>
-      <li class="nav_item">
-        <div class="dropdown">
-          <a href="#" class="nav_link dropdown_toggle">رشته ها</a>
-          <ul class="dropdown_menu">
-            <!-- Engineering -->
-            <li class="dropdown_item">
-              <div class="nested_dropdown">
-                <a href="#" class="dropdown_link">مهندسی</a>
-                <ul class="nested_dropdown_menu">
-                  <li><a href="computer_engineering.html" class="nested_dropdown_item">مهندسی کامپیوتر</a></li>
-                  <li><a href="#" class="nested_dropdown_item">مهندسی معدن</a></li>
-                  <li><a href="#" class="nested_dropdown_item">مهندسی عمران</a></li>
-                </ul>
-              </div>
-            </li>
-            <!--Sciences -->
-            <li class="dropdown_item">
-              <div class="nested_dropdown">
-                <a href="#" class="dropdown_link">علوم پایه</a>
-                <ul class="nested_dropdown_menu">
-                  <li><a href="#" class="nested_dropdown_item">زیست‌شناسی</a></li>
-                  <li><a href="physicss-1.html" class="nested_dropdown_item">فیزیک</a></li>
-                
-                </ul>
-              </div>
-            </li>
-            <!-- keshavarzi-->
-            <li class="dropdown_item">
-              <div class="nested_dropdown">
-                <a href="#" class="dropdown_link">کشاورزی</a>
-                <ul class="nested_dropdown_menu">
-                  <li><a href="#" class="nested_dropdown_item">ژنتیک</a></li>
-                 
-                  
-                </ul>
-              </div>
-            </li>
-          </ul>
+  <header class="header">
+    <nav class="nav">
+       <a href="index.html" class="nav_logo">
+       <img src="pic/LOGO WHITE PNG.png" alt="لوگو جزوه‌نما" class="logo_image">
+      <ul class="nav_items">
+        <li class="nav_item">
+          <a href="index.html" class="nav_link">
+            <i class="fas fa-home"></i> خانه
+          </a>
+        </li>
+        <li class="nav_item">
+          <div class="dropdown">
+            <a href="#" class="nav_link dropdown_toggle">
+              <i class="fas fa-bars"></i> رشته ها
+            </a>
+            <ul class="dropdown_menu">
+              <li class="dropdown_item">
+                <div class="nested_dropdown">
+                  <a href="#" class="dropdown_link"> <i class="fas fa-cogs"></i>مهندسی</a>
+                  <ul class="nested_dropdown_menu">
+                    <li><a href="computer_engineering.html" class="nested_dropdown_item" ><i class="fas fa-laptop-code"></i>مهندسی کامپیوتر</a></li>
+                    <li><a href="#" class="course_link nested_dropdown_item">><i class="fas fa-building"></i>مهندسی عمران</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dropdown_item">
+                <div class="nested_dropdown">
+                  <a href="#" class="dropdown_link" ><i class="fas fa-flask"></i>علوم پایه</a>
+                  <ul class="nested_dropdown_menu">
+                    <li><a href="#" class="nested_dropdown_item"><i class="fas fa-dna"></i>زیست‌شناسی</a></li>
+                    <li><a href="physicss-1.html" class="nested_dropdown_item"><i class="fas fa-atom"></i>فیزیک</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dropdown_item">
+                <div class="nested_dropdown">
+                  <a href="#" class="dropdown_link"><i class="fas fa-seedling"></i>کشاورزی</a>
+                  <ul class="nested_dropdown_menu">
+                    <li><a href="#" class="course_link nested_dropdown_item"><i class="fas fa-chart-line"></i>ژنتیک</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div id="auth-area">
+        <button class="button" id="form-open">ورود</button>
+        <div id="user-profile" style="display:none; align-items:center; gap:10px;">
+          <i class="uil uil-user-circle"></i>
+          <span id="username-display"></span>
+          <button class="button" id="logout-button">خروج</button>
         </div>
-      </li>
-    </ul>
-    <button class="button" id="form-open">ورود</button>
-  </nav>
-</header>
+      </div>
+    </nav>
+  </header>
 
-  
   <section class="about">
     <div class="about_content">
       <h1 dir="rtl">درباره ما</h1>
@@ -77,12 +81,11 @@
         <a href="mailto:aamhs8383sazmand@gmail.com" style="color: #7d2ae8; text-decoration: none;">aamhs8383sazmand@gmail.com</a>
       </p>
       <div class="about_image">
-        <img src="pic/bahonar.jpg"  />
+        <img src="pic/bahonar.jpg" alt="دانشگاه شهید باهنر" />
       </div>
     </div>
   </section>
 
-  <!-- بگو چی هسی-->
   <div class="form_container" style="display: none;">
     <i class="uil uil-times form_close"></i>
     <div class="role_selection">
@@ -90,7 +93,6 @@
       <button class="button role_button" id="user_role">کاربر</button>
       <button class="button role_button" id="admin_role">ادمین</button>
     </div>
-    <!-- ورود کاربر-->
     <div class="form login_form user_form" id="user_login_form" style="display: none;">
       <form action="#">
         <h2>ورود کاربر</h2>
@@ -107,7 +109,6 @@
         <div class="login_signup">حساب کاربری ندارید؟ <a href="#" id="user_signup_link">ثبت‌نام</a></div>
       </form>
     </div>
-    <!-- ورود ادمین-->
     <div class="form login_form admin_form" id="admin_login_form" style="display: none;">
       <form action="#">
         <h2>ورود ادمین</h2>
@@ -123,7 +124,6 @@
         <button class="button">ورود</button>
       </form>
     </div>
-    <!-- ثبت نام کاربر -->
     <div class="form signup_form user_form" id="user_signup_form" style="display: none;">
       <form action="#">
         <h2>ثبت‌نام کاربر</h2>
