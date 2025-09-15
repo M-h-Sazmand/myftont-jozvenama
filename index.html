@@ -4,59 +4,61 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>وب‌سایت جزوه‌نما</title>
+  <title>جزوه‌نما</title>
   
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn :wght@400;500;700&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css " />
-  
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 <!-- Header -->
 <header class="header">
   <nav class="nav">
-    <a href="index.html" class="nav_logo">جزوه نما</a>
+    <a href="index.html" class="nav_logo">
+       <img src="pic/LOGO WHITE PNG.png" alt="لوگو جزوه‌نما" class="logo_image">
+       
+  </svg>
+    </a>
 
-    <!--search-->
-    <div class="search_bar">
-      <input type="text" placeholder="جستجو..." />
-      <i class="uil uil-search search_icon"></i>
-    </div>
-
+   <!-- تو تمام صفحات -->
+<div class="search_bar">
+  <input type="text" placeholder="جستجو..." />
+  <i class="uil uil-search search_icon"></i>
+</div>
     <ul class="nav_items">
-      <li class="nav_item"><a href="about we.html" class="nav_link">درباره ما</a></li>
+      <li class="nav_item"><a href="about we.html" class="nav_link"><i class="fas fa-user"></i>درباره ما</a></li>
       <li class="nav_item">
         <div class="dropdown">
-          <a href="#" class="nav_link dropdown_toggle">رشته ها </a>
+             <a href="#" class="nav_link dropdown_toggle"><i class="fas fa-bars"></i> رشته ها</a>
           <ul class="dropdown_menu">
             <!-- Engineering -->
             <li class="dropdown_item">
               <div class="nested_dropdown">
-                <a href="#" class="dropdown_link">مهندسی</a>
+                  <a href="#" class="dropdown_link"> <i class="fas fa-cogs"></i>مهندسی</a>
                 <ul class="nested_dropdown_menu">
-                  <li><a href="computer_engineering.html" class="nested_dropdown_item">مهندسی کامپیوتر</a></li>
-                  <li><a href="#"  id="gardening_link" class="nested_dropdown_item">مهندسی عمران</a></li>
+                  <li><a href="computer_engineering.html" class="nested_dropdown_item" ><i class="fas fa-laptop-code"></i>مهندسی کامپیوتر</a></li>
+                    <li><a href="#" class="course_link nested_dropdown_item">><i class="fas fa-building"></i>مهندسی عمران</a></li>
                 </ul>
               </div>
             </li>
             <!--  Sciences -->
             <li class="dropdown_item">
               <div class="nested_dropdown">
-                <a href="#" class="dropdown_link">علوم پایه</a>
+              <a href="#" class="dropdown_link" ><i class="fas fa-flask"></i>علوم پایه</a>
                 <ul class="nested_dropdown_menu">
-                  <li><a href="biology1.html" class="nested_dropdown_item">زیست‌شناسی</a></li>
-                  <li><a href="physicss-1.html" class="nested_dropdown_item">فیزیک</a></li>
+              <li><a href="biology1.html" class="nested_dropdown_item"><i class="fas fa-dna"></i>زیست‌شناسی</a></li>
+                    <li><a href="physicss-1.html" class="nested_dropdown_item"><i class="fas fa-atom"></i>فیزیک</a></li>
                 </ul>
               </div>
             </li>
             <!--  keshavarzi -->
             <li class="dropdown_item">
               <div class="nested_dropdown">
-                <a href="#" class="dropdown_link">کشاورزی</a>
+                 <a href="#" class=" dropdown_link"><i class="fas fa-seedling"></i>کشاورزی</a>
                 <ul class="nested_dropdown_menu">
-                  <li><a href="#"id="gardening_link" class="nested_dropdown_item">ژنتیک</a></li>
-                  <li><a href="#" class="nested_dropdown_item">باغبانی</a></li>
+                <li><a href="#" class=" course_link nested_dropdown_item"><i class="fas fa-chart-line"></i>ژنتیک</a></li>
+                 
                 </ul>
               </div>
             </li>
@@ -66,8 +68,17 @@
       <li class="nav_item"><a href="index.html" class="nav_link">خانه</a></li>
     </ul>
 
-    <!-- Login Butto -->
-    <button class="button" id="form-open">ورود</button>
+  <div id="auth-area">
+  <!-- دکمه ورود -->
+  <button class="button" id="form-open">ورود</button>
+
+  <!-- نمایش پروفایل بعد از ورود -->
+  <div id="user-profile" style="display:none; align-items:center; gap:10px;">
+    <i class="uil uil-user-circle" style="font-size:1.5rem;"></i>
+    <span id="username-display" style="font-weight:bold;"></span>
+    <button class="button" id="logout-button">خروج</button>
+  </div>
+</div>
   </nav>
 </header>
   <!-- Home -->
@@ -80,19 +91,19 @@
     </div>
     <!-- Carousel (pic)-->
   <section class="carousel_section">
-    <h2 class="carousel_title">رشته های پر بازدید</h2>
+    <h2 class="carousel_title">❤محبوب ترین ها❤</h2>
     <div class="carousel_container">
       <div class="carousel_slides">
         <a href="computer_engineering.html" class="carousel_item">
           <img src="pic/comppng.png" alt="مهندسی کامپیوتر" />
           <div class="carousel_caption">مهندسی کامپیوتر</div>
         </a>
-        <a href="" class="carousel_item">
+        <a href="physicss-1.html" class="carousel_item">
           <img src="pic/physics.jpg" alt="فیزیک" />
           <div class="carousel_caption">فیزیک</div>
         </a>
         
-        <a href="biology.html" class="carousel_item">
+        <a href="biology1.html" class="carousel_item">
           <img src="pic/biology.png" alt="زیست‌شناسی" />
           <div class="carousel_caption">زیست‌شناسی</div>
         </a>
@@ -113,21 +124,21 @@
 
       <!-- ورود کاربر -->
       <div class="form login_form user_form" id="user_login_form" style="display: none;">
-        <form action="#">
-          <h2>ورود کاربر</h2>
-          <div class="input_box">
-            <input type="text" placeholder="نام کاربری خود را وارد کنید" required />
-            <i class="uil uil-user username"></i>
-          </div>
-          <div class="input_box">
-            <input type="password" placeholder="رمز عبور خود را وارد کنید" required />
-            <i class="uil uil-lock password"></i>
-            <i class="uil uil-eye-slash pw_hide"></i>
-          </div>
-          <button class="button">ورود</button>
-          <div class="login_signup">حساب کاربری ندارید؟ <a href="#" id="user_signup_link">ثبت‌نام</a></div>
-        </form>
-      </div>
+  <form action="#">
+    <h2>ورود کاربر</h2>
+    <div class="input_box">
+      <input type="text" id="username_input" placeholder="نام کاربری خود را وارد کنید" required />
+      <i class="uil uil-user username"></i>
+    </div>
+    <div class="input_box">
+     <input type="password" id="password_input" placeholder="رمز عبور خود را وارد کنید" required />
+      <i class="uil uil-lock password"></i>
+      <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+    <button class="button">ورود</button>
+    <div class="login_signup">حساب کاربری ندارید؟ <a href="#" id="user_signup_link">ثبت‌نام</a></div>
+  </form>
+</div>
 
       <!-- ورود ادمین -->
       <div class="form login_form admin_form" id="admin_login_form" style="display: none;">
@@ -145,6 +156,9 @@
           <button class="button">ورود</button>
         </form>
       </div>
+
+      <button class="button" id="logout-button" style="display:none; margin-left: 10px;">خروج</button>
+
 
       <!-- ثبت کاربر -->
       <div class="form signup_form user_form" id="user_signup_form" style="display: none;">
