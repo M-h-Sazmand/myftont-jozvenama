@@ -7,47 +7,44 @@
   <title>مهندسی کامپیوتر - جزوه نما</title>
   
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn :wght@400;500;700&display=swap" rel="stylesheet">
-  
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css " />
-  
   <link rel="stylesheet" href="major styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
   <!-- Header -->
   <header class="header">
     <nav class="nav">
-      <a href="index.html" class="nav_logo">جزوه نما</a>
-
-      <!-- Search-->
-      <div class="search_bar">
-        <input type="text" placeholder="جستجو..." />
-        <i class="uil uil-search search_icon"></i>
-      </div>
+      <a href="index.html" class="nav_logo">
+       <img src="pic/LOGO WHITE PNG.png" alt="لوگو جزوه‌نما" class="logo_image">
+<div class="search_bar">
+  <input type="text" placeholder="جستجو..." />
+  <i class="uil uil-search search_icon"></i>
+</div>
 
       <ul class="nav_items">
-        <li class="nav_item"><a href="about we.html" class="nav_link">درباره ما</a></li>
+       <li class="nav_item"><a href="about we.html" class="nav_link"><i class="fas fa-user"></i>درباره ما</a></li>
         <li class="nav_item">
           <div class="dropdown">
-            <a href="#" class="nav_link dropdown_toggle">رشته ها </a>
+            <a href="#" class="nav_link dropdown_toggle"><i class="fas fa-bars"></i>رشته ها </a>  
             <ul class="dropdown_menu">
               <!--Engineering -->
               <li class="dropdown_item">
                 <div class="nested_dropdown">
-                  <a href="#" class="dropdown_link">مهندسی</a>
+                  <a href="#" class="dropdown_link"> <i class="fas fa-cogs"></i>مهندسی</a>
                   <ul class="nested_dropdown_menu">
-                    <li><a href="computer_engineering.html" class="nested_dropdown_item">مهندسی کامپیوتر</a></li>
-                    <li><a href="#" class="nested_dropdown_item">مهندسی معدن</a></li>
-                    <li><a href="#" class="nested_dropdown_item">مهندسی عمران</a></li>
+                      <li><a href="computer_engineering.html" class="nested_dropdown_item" ><i class="fas fa-laptop-code"></i>مهندسی کامپیوتر</a></li>
+                    <li><a href="#" class="course_link nested_dropdown_item"><i class="fas fa-building"></i>مهندسی عمران</a></li>
                   </ul>
                 </div>
               </li>
               <!--Sciences -->
               <li class="dropdown_item">
                 <div class="nested_dropdown">
-                  <a href="#" class="dropdown_link">علوم پایه</a>
+                  <a href="#" class="dropdown_link" ><i class="fas fa-flask"></i>علوم پایه</a>
                   <ul class="nested_dropdown_menu">
-                    <li><a href="biology1.html" class="nested_dropdown_item">زیست‌شناسی</a></li>
-                    <li><a href="physicss-1.html" class="nested_dropdown_item">فیزیک</a></li>
+                   <li><a href="biology1.html" class="nested_dropdown_item"><i class="fas fa-dna"></i>زیست‌شناسی</a></li>
+                    <li><a href="physicss-1.html" class="nested_dropdown_item"><i class="fas fa-atom"></i>فیزیک</a></li>
 
                   </ul>
                 </div>
@@ -55,9 +52,9 @@
               <!-- keshavarzi -->
               <li class="dropdown_item">
                 <div class="nested_dropdown">
-                  <a href="#" class="dropdown_link">کشاورزی</a>
+                <a href="#" class=" dropdown_link"><i class="fas fa-seedling"></i>کشاورزی</a>
                   <ul class="nested_dropdown_menu">
-                    <li><a href="#" class="nested_dropdown_item">ژنتیک</a></li>
+                  <li><a href="#" class=" course_link nested_dropdown_item"><i class="fas fa-chart-line"></i>ژنتیک</a></li>
                    
                   </ul>
                 </div>
@@ -65,11 +62,18 @@
             </ul>
           </div>
         </li>
-        <li class="nav_item"><a href="index.html" class="nav_link">خانه</a></li>
+        <li class="nav_item"><a href="index.html" class="nav_link"  ><i class="fas fa-home"></i> خانه</a></li>
         
       </ul>
+<div id="auth-area">
+  <button class="button" id="form-open">ورود</button>
 
-      <button class="button" id="form-open">ورود</button>
+  <div id="user-profile" style="display:none; align-items:center; gap:10px;">
+    <i class="uil uil-user-circle"></i>
+    <span id="username-display"></span>
+    <button class="button" id="logout-button">خروج</button>
+  </div>
+</div>
     </nav>
   </header>
   
@@ -197,5 +201,8 @@
 </section>
 
   <script src="script.js"></script>
+  <script>
+  const CURRENT_CATEGORY_ID = 1; // ID رشته مهندسی کامپیوتر تو دیتابیس
+</script>
 </body>
 </html>
