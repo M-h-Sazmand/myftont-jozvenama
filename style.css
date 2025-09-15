@@ -12,7 +12,7 @@ a {
   text-decoration: none;
 }
 body{
-  background-image: url("pic/rrr.jpg");
+  background-image: url("pic/p3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,7 +29,7 @@ body{
   width: 100%;
   z-index: 100;
   background-color: #333; 
-  background-image: url(pic/rrr.jpg);
+  background-image: url(pic/p2.jpg);
   padding: 0 20px;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ body{
 
 .nav_logo {
   font-size: 25px;
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
 }
 
@@ -71,9 +71,9 @@ body{
 
 .button {
   padding: 8px 16px; 
-  border: 2px solid #fff;
+  border: 2px solid #000000;
   background: transparent;
-  color: #fff;
+  color: #000000;
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
@@ -162,15 +162,35 @@ body{
   align-items: center;
   justify-content: space-between; 
 }
-
 .nav_logo {
-  margin-left: 20px; 
+  display: flex;
+  align-items: center; 
+  gap: 10px; 
+  text-decoration: none; 
+  color: #333; 
+  font-size: 1.5rem; 
+  font-weight: bold; 
+}
+
+.logo_image {
+ width: 150px; /* عرض تصویر */
+  height: auto;
+  background: none; 
 }
 
 .nav_items {
   display: flex;
   align-items: center;
   gap: 25px; 
+}
+.nav_link {
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+.nav_link i {
+  font-size: 18px; 
 }
 
 .button {
@@ -187,7 +207,7 @@ body{
   position: absolute;
   top: 100%; 
   left: 0;
-  background-color: #333;
+  background-color: #7d2ae8;
   padding: 10px 0;
   border-radius: 6px;
   z-index: 200;
@@ -211,7 +231,7 @@ body{
 }
 
 .dropdown_item a:hover {
-  background-color: #555;
+  background-color: #144997;
 }
 
 .dropdown:hover > .dropdown_menu {
@@ -224,7 +244,7 @@ body{
   position: absolute;
   top: 0; 
   left: 100%; 
-  background-color: #333;
+  background-color: #7d2ae8;
   padding: 10px 0;
   border-radius: 6px;
   z-index: 200;
@@ -248,13 +268,14 @@ body{
     transform: translateY(0);
   }
 }
-.home {
+/*.home {
   position: relative;
-  height: 100vh;
+  height: 150vh;
   width: 100%;
   background-image: url("pic/rrr.jpg"); 
   background-size: cover;
   background-position: center;
+    background-attachment: fixed
 }
 
 .home::before {
@@ -264,7 +285,7 @@ body{
 .home.show::before {
   opacity: 1;
   pointer-events: auto;
-}
+}*/
 
 
 .form_container {
@@ -456,7 +477,7 @@ body{
 
 .carousel_title {
   font-size: 24px;
-  color: #7d2ae8; 
+  color: #291717; 
   margin-bottom: 20px;
   font-weight: bold;
   animation: fadeIn 1.5s ease-in-out; 
@@ -551,4 +572,51 @@ body{
 
 .carousel_dots .dot.active {
   background-color: #7d2ae8;
+}
+
+
+#user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(241, 237, 237, 0.05);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#username-display {
+  color: #000000; 
+  font-family: 'Vazirmatn', sans-serif; 
+  font-size: 18px; 
+  font-weight: 600; 
+  text-transform: capitalize; 
+}
+
+.uil-user-circle {
+  color: #000000; 
+}
+.profile_icon {
+  font-size: 24px;
+  color: white;
+}
+
+.username_text {
+  font-family: 'Vazirmatn', sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.logout-button {
+  background-color: #ff4d4d;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
 }
